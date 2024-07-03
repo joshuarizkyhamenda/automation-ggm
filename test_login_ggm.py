@@ -26,9 +26,9 @@ class logintest(unittest.TestCase):
         EC.presence_of_element_located((By.XPATH, '/html/body/div/div/div[2]/div[1]/section[1]/div[2]/div/div[2]/div/input')))
         password.send_keys("12345678")
         
-        btnlogin = WebDriverWait(driver, 10).until(
+        btn_login = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, '/html/body/div/div/div[2]/div[1]/section[1]/div[2]/div/div[3]/button')))
-        btnlogin.click()
+        btn_login.click()
         
         #kondisi 1 - Gagal login
         try:
